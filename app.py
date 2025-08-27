@@ -23,7 +23,8 @@ st.set_page_config(
 # ----------------------------------------------------
 # Custom CSS for Background + Effects
 # ----------------------------------------------------
-youtube_logo_path = "D:\Guvi projects\YoutubeAdRevProject\youtube-logo-png-photo-0.png"
+# youtube_logo_path = "D:\Guvi projects\YoutubeAdRevProject\youtube-logo-png-photo-0.png"
+youtube_logo_path = os.path.join(BASE_DIR, "youtube-logo-png-photo-0.png")
 page_bg = """
 <style>
 /* Background */
