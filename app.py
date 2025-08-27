@@ -24,7 +24,7 @@ st.set_page_config(
 # Custom CSS for Background + Effects
 # ----------------------------------------------------
 # youtube_logo_path = "D:\Guvi projects\YoutubeAdRevProject\youtube-logo-png-photo-0.png"
-youtube_logo_path = os.path.join(BASE_DIR, "youtube-logo-png-photo-0.png")
+# youtube_logo_path = os.path.join(BASE_DIR, "youtube-logo-png-photo-0.png")
 page_bg = """
 <style>
 /* Background */
@@ -91,14 +91,14 @@ st.markdown(page_bg, unsafe_allow_html=True)
 # ----------------------------------------------------
 # Title
 # ----------------------------------------------------
-col1, col2 = st.columns([2, 10])  # adjust ratio for spacing
+# col1, col2 = st.columns([2, 10])  # adjust ratio for spacing
 
-with col1:
-    st.image(youtube_logo_path, width=100)  # logo on left
+# with col1:
+#     st.image(youtube_logo_path, width=100)  # logo on left
 
-with col2:
-    st.title("YouTube Ad Revenue Prediction")  # title on right
-    st.write("Enter your video details to estimate the ad revenue.")
+# with col2:
+st.title("YouTube Ad Revenue Prediction")  # title on right
+st.write("Enter your video details to estimate the ad revenue.")
 
 # ----------------------------------------------------
 # User Inputs
