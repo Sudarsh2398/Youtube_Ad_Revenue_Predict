@@ -2,11 +2,14 @@ import streamlit as st
 import pandas as pd
 import pickle
 from datetime import date
-
+import os
 # -------------------------
 # Load Model
 # -------------------------
-model = pickle.load(open(r'D:\Guvi projects\YoutubeAdRevProject\Models\poly_LR_model.pkl', 'rb'))
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+model_path = os.path.join(BASE_DIR, "Models", "poly_LR_model.pkl")
+model = pickle.load(open(model_path, "rb"))
+# model = pickle.load(open(r'D:\Guvi projects\YoutubeAdRevProject\Models\poly_LR_model.pkl', 'rb'))
 
 # ----------------------------------------------------
 # Streamlit Page Config
