@@ -6,7 +6,7 @@ from datetime import date
 # -------------------------
 # Load Model
 # -------------------------
-model = pickle.load(open('D:\Guvi projects\YoutubeAdRevProject\Models\poly_LR_model.pkl', 'rb'))
+model = pickle.load(open(r'D:\Guvi projects\YoutubeAdRevProject\Models\poly_LR_model.pkl', 'rb'))
 
 # ----------------------------------------------------
 # Streamlit Page Config
